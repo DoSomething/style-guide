@@ -1,0 +1,22 @@
+{
+  "name": "static-boilerplate",
+  "version": "0.0.0",
+  "description": "A light prototyping environment for HTML, CSS and JavaScript",
+  "dependencies": {
+    "grunt": "~0.4.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.3",
+    "grunt-contrib-compass": "~0.7.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mmwtsn/static-boilerplate.git"
+  },
+  "author": "mmwtsn",
+  "license": "MIT"
+}
