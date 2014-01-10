@@ -7,43 +7,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
     <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico" />
-    <link href="./public/css/styles.css" rel="stylesheet">
+    <link href="./vendor/assets/components/pattern-library/assets/neue.css" rel="stylesheet">
+    <link href="./public/css/style-guide.css" rel="stylesheet">
   </head>
 
   <body>
-    <header class="header">
-      <h1><img src="http://www.dosomething.org/sites/all/themes/doit/images/ds-logo.png" alt="DoSomething.org">Style Guide</h1>
-    </header>
 
-    <aside class="sidebar">
-      <div id="topics" class="topics">
-        <h2 id="current-topic" class="current">Current Topic</h2>
-        <ul>
-          <li>topic 1</li>
-          <li>topic 2</li>
-          <li>topic 3</li>
-          <li>topic 4</li>
-        </ul>
+    <div class="full-width bg-grey1">
+      <div class="wrapper">
+        <header class="header column span_12">
+          <div class="row">
+            <img class="column span_3" src="http://www.dosomething.org/sites/all/themes/doit/images/ds-logo.png" alt="DoSomething.org">
+            <h1 class="column span_9">Style Guide</h1>
+          </div>
+        </header>
       </div>
-    </aside>
-    
-    <main class="main wrapper" role="main">
-      <section class="section">
-        <p>This is a section.</p>
-      </section>
+    </div>
 
-      <section class="section">
-        <p>This is a section.</p>
-      </section>
+    <div class="wrapper">
+      <aside class="sidebar column span_3 bg-grey2">
+        <div id="topics" class="topics">
+          <h2 id="current-topic" class="current">Current Topic</h2>
+          <ul>
+            <li>topic 1</li>
+            <li>topic 2</li>
+            <li>topic 3</li>
+            <li>topic 4</li>
+          </ul>
+        </div>
+      </aside>
+      
+      <main class="main column span_6" role="main">
+        <section class="row section">
 
-      <section class="section">
-        <p>This is a section.</p>
-      </section>
-    </main>
+          <h2>
+            <a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>
+            <a name="introduction" href="#introduction" rel="noreferrer"></a>Introduction</h2>
 
-    <footer class="footer">
-      <small class="hand-written">&copy; 2014</small>
-    </footer>
+          <p>This style guide is our visual identity. Within it you'll find an outline of how DoSomething.org communicates our brand visually. Our style guide is a living, breathing document that will evolve over time and change as we change.</p>
+
+          <p>This style guide is not our entire brand. Our brand is far more than what we show. For non-visual brand guidelines please see our Communications Guide.</p>
+
+          <p>A few points: our style guide lives in code and is hosted in the cloud. That means that at any time the most up-to-date version of it will always be accessible to you. Perhaps more importantly, that means that the style guide you see here is the actual HTML and CSS that will be used to build our site. Any changes made here will be seen across our entire web platform. A PDF version will also be made accessible in the near future.</p>
+
+          <p>View this style guide and its included guidelines as a set of tools. If you find yourself being called upon to do any design work please consult this style guide before starting. It will guide you through the design process. Feedback on design work should be justified and passed with reference to the relevant section of the style guide. If you have any suggestions or find it to be at all incomplete please add an issue to our Trello board.</p>
+
+          <h2>
+          <a name="design-tenents" class="anchor" href="#design-tenents"><span class="octicon octicon-link"></span></a>
+          <a name="design-tenents" href="#design-tenents" rel="noreferrer"></a>Design Tenents</h2>
+
+          <p>These tenents are the foundation of design at DoSomething.org. They serve both as a framework for creation and critique.</p>
+
+          <h3>
+          <a name="clean" class="anchor" href="#clean"><span class="octicon octicon-link"></span></a>
+          <a name="clean" href="#clean" rel="noreferrer"></a>Clean</h3>
+
+          <p>First and foremost, Do Something’s visual identity is clean. This is not a license to be boring.* Simple, uncluttered design provides a strong foundation from which we can build at scale.</p>
+
+          <h3>
+          <a name="purposeful" class="anchor" href="#purposeful"><span class="octicon octicon-link"></span></a>
+          <a name="purposeful" href="#purposeful" rel="noreferrer"></a>Purposeful</h3>
+
+          <p>All decisions made should be justifiable. Do Something’s visual brand is clean and consistent. We do not clutter and we do not decorate without reason.</p>
+
+          <h3>
+          <a name="youthful" class="anchor" href="#youthful"><span class="octicon octicon-link"></span></a>
+          <a name="youthful" href="#youthful" rel="noreferrer"></a>Youthful</h3>
+
+          <p>This is who we are. More importantly, that is who our users are. Our visual identity should reflect this.</p>
+
+          <h2>
+          <a name="color" class="anchor" href="#color"><span class="octicon octicon-link"></span></a>
+          <a name="color" href="#color" rel="noreferrer"></a>Color</h2>
+
+          <p>Color is to be used consistently and purposefully. We have a four-tone greyscale complimented by a call to action color and two accent colors. For medium-specific usage please consult:</p>
+
+          <ul>
+          <li>…</li>
+          <li>…</li>
+          <li>…</li>
+          </ul><p>Blue: #23b7fb
+          Purple: #4e2b63
+          Yellow: #fed100</p>
+
+          <h2>
+          <a name="typography" class="anchor" href="#typography"><span class="octicon octicon-link"></span></a>
+          <a name="typography" href="#typography" rel="noreferrer"></a>Typography</h2>
+
+          <p>Our typography is set using a modular scale based on a prearranged set of harmonous proportions. We use the Perfect 4th musical intervals as the baseline for our type sizes.</p>
+
+          <h3>
+          <a name="font-sizes-and-weights" class="anchor" href="#font-sizes-and-weights"><span class="octicon octicon-link"></span></a>
+          <a name="font-sizes-and-weights" href="#font-sizes-and-weights" rel="noreferrer"></a>Font Sizes and Weights</h3>
+
+          <p>These are the pixel values used for our font sizes on all web-based media grouped by weight.</p>
+
+          <ul>
+          <li><strong>Bold</strong></li>
+          <li>50.512</li>
+          <li>37.904</li>
+          <li>28.432</li>
+          <li><strong>Semi-Bold</strong></li>
+          <li>21.328</li>
+          <li>16</li>
+          <li><strong>Regular</strong></li>
+          <li>12</li>
+          <li>9.008</li>
+          <li>6.752</li>
+          </ul><p>3.157
+          2.369
+          1.777</p>
+
+          <p>1.333
+          1</p>
+
+          <p>0.75
+          0.563
+          0.422</p>
+        </section>
+      </main>
+    </div>
+
+    <div class="full-width bg-grey3">
+      <div class="wrapper">
+        <footer class="footer column span_12">
+          <small class="row hand-written">&copy; 2014</small>
+        </footer>
+      </div>
+    </div>
 
     <script src="public/js/script.js" type="text/javascript"></script>
   </body>
