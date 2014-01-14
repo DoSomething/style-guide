@@ -41,6 +41,14 @@ $grey4: #eee;
 //  Style Guide
 // -------------
 
+a {
+  color: $blue;
+
+  &:hover {
+    color: lighten($blue, 10%);
+  }
+}
+
 .left {
   float: left;
 }
@@ -49,19 +57,45 @@ $grey4: #eee;
   float: right;
 }
 
+.logo-wrapper {
+  height: 8.7rem;
+}
+
+.logo {
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 1.5rem 0;
+  width: 100px;
+}
+ 
 .title {
   text-transform: uppercase;
 }
 
+.version {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.header {
+  margin: 0 0 2rem 0 !important;
+  overflow: hidden;
+}
+
 .color-sample {
   width: 100%;
-  height: 6rem;
+  height: 1.5rem;
 }
 
 .color-description {
   width: 100%;
   height: 2rem;
   margin: 0 0 3rem 0;
+
+  .btn {
+    margin: 1rem 1.5rem 1.5rem 0;
+  }
 }
 
 .main {
@@ -128,5 +162,5 @@ small {
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 3rem 0 1.5rem 0 !important;
+  margin: 3rem 0 1rem 0 !important;
 }
