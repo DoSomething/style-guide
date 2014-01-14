@@ -1,0 +1,43 @@
+// Colors
+// ------------------
+$blue: #18408b;
+$light-blue: #00b5e0;
+$gold: #fed100;
+$yellow: #f6e816;
+
+$off-black: #333131;
+$dark-gray: #666;
+$light-gray: #ddd;
+$off-white: #f4f4f4;
+
+$red: #ef4135;
+$green: #8cc026;
+$purple: #a9218e;
+$orange: #2eb393;
+$hot-pink: #e20177;
+
+$btn-color: #ffcb15;
+$btn-hover: #feb800;
+$btn-border: #feb800;
+$btn-gray: #ccc;
+
+// Fonts
+// ------------------
+$font-sans: "Trebuchet MS", sans-serif;
+$font-proxima-nova: "Proxima Nova", $font-sans;
+$font-hand-written: "Engineer";
+
+// Dimensions
+// ------------------
+$break-small: 730px;
+$break-large: 1160px;
+
+$sm-border-radius: 2px; // for accent (images, text fields, etc)
+$lg-border-radius: 5px; // used for primary interactive elements (buttons, etc)
+
+// Keyframes
+// ------------------
+@include keyframes(rotation) {
+  from { @include transform(rotate(0)); }
+  to { @include transform(rotate(359deg)); }
+}

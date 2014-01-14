@@ -1,0 +1,15 @@
+{
+  "name": "pattern-library",
+  "homepage": "https://github.com/mmwtsn/pattern-library",
+  "version": "2.6.5",
+  "_release": "2.6.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.6.5",
+    "commit": "f0a5ee1b960461d6980a792041556d0d0c7bdbb2"
+  },
+  "_source": "git@github.com:mmwtsn/pattern-library.git",
+  "_target": "~2.6.5",
+  "_originalSource": "git@github.com:mmwtsn/pattern-library.git",
+  "_direct": true
+}
