@@ -7,12 +7,4 @@ $(function() {
   var clipboard = new ZeroClipboard( $(".clipboard"), {
     moviePath: "./vendor/assets/components/zeroclipboard/ZeroClipboard.swf"
   });
-
-  clipboard.on("load", function(client) {
-    client.on( "complete", function(client, args) {
-      // `this` is the element that was clicked
-      this.style.display = "none";
-      alert("Copied text to clipboard: " + args.text );
-    });
-  });
 })
