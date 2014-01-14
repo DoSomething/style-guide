@@ -8,11 +8,6 @@
 
     <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico" />
     <link href="./vendor/assets/components/pattern-library/assets/neue.css" rel="stylesheet">
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="./vendor/assets/components/pattern-library/assets/neue.js"></script>
-    <script src="./vendor/assets/components/pattern-library/assets/app.js"></script>
-
     <link href="./public/css/style-guide.css" rel="stylesheet">
   </head>
 
@@ -34,10 +29,10 @@
           <div id="js-pin-to-top-anchor">&nbsp;</div>
           <nav id="nav" class="nav js-pin-to-top" role="nav">
             <ul>
-              <li>topic 1</li>
-              <li>topic 2</li>
-              <li>topic 3</li>
-              <li>topic 4</li>
+              <li><a class="js-jump-scroll link" href="#introduction">introduction</a></li>
+              <li><a class="js-jump-scroll link" href="#tenents">tenents</a></li>
+              <li><a class="js-jump-scroll link" href="#color">color</a></li>
+              <li><a class="js-jump-scroll link" href="#typography">typography</a></li>
             </ul>
           </nav>
         </aside>
@@ -84,28 +79,63 @@
             <li><h3>Blue</h3></li>
             <li><p>Our blue is a color used primarily for interactable elements on web platforms. It is the default call to action color and should be used for primary links, buttons, navigation items, etc. This blue should <i>not</i> be used as an accent or background color. Headers and other typographic elements should not be set in this blue unless they are linked elements.</p></li>
             <li class="color-sample bg-blue">&nbsp;</li>
-            <li class="color-description"><small><a class="btn secondary small" href="#">Copy HEX</a><a class="btn secondary small" href="#">Copy RGB</a></small></li>
+            <li class="color-description">
+              <small>
+                <button class="btn secondary small clipboard" data-clipboard-target="#23b7fb">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-target="rgb(35, 183, 251)">Copy RGB</button>
+              </small>
+            </li>
 
             <li><h3>Purple</h3></li>
             <li><p>Purple is used to call attention to significant points of user interaction (e.g. the "report back" section of the campaign action page) or typographic elements to break up the monotony of long passages of type. Uses: second-level headers, background color of system messages and important content regions <i>containing actionable elements</i>.</p></li>
             <li class="color-sample bg-purple">&nbsp;</li>
-            <li class="color-description"><small><a class="btn secondary small" href="#">Copy HEX</a><a class="btn secondary small" href="#">Copy RGB</a></small></li>
+            <li class="color-description">
+              <small>
+                <button class="btn secondary small clipboard" data-clipboard-target="#4e2b63">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-target="rgb(78, 43, 99)">Copy RGB</button>
+              </small>
+            </li>
 
             <li><h3>Yellow</h3></li>
             <li><p>Yellow is used as a skeuomorphic accent to all handwritten elements in our applications. All text set using the Engineer typeface should be accompanied by an organic highlight mark under the text. Yellow should not be used for slides, page elements or call to action elements (e.g. buttons, etc.).</p></li>
             <li class="color-sample bg-yellow">&nbsp;</li>
-            <li class="color-description"><small><a class="btn secondary small" href="#">Copy HEX</a><a class="btn secondary small" href="#">Copy RGB</a></small></li>
+            <li class="color-description">
+              <small>
+                <button class="btn secondary small clipboard" data-clipboard-target="#fed100">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-target="rgb(254, 209, 0)">Copy RGB</button>
+              </small>
+            </li>
 
             <li><h3>Greyscale</h3></li>
             <li><p>Our greyscale is used primarily to color block background elements. These page elements are typically header, navigation, aside or footer elements. By setting a darker background on these elements we are able to clearly differentiate these page regions, group relevant content and diminish the visual importance of secondary or tertiary page sections (e.g. a footer). The lightest of greys is useful when an accent or border is needed to break up content set against a white background.</p></li>
             <li class="color-sample bg-grey1">&nbsp;</li>
-            <li class="color-description"><small><a class="btn secondary small" href="#">Copy HEX</a><a class="btn secondary small" href="#">Copy RGB</a></small></li>
+            <li class="color-description">
+              <small>
+                <button class="btn secondary small clipboard" data-clipboard-target="#222222">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-target="rgb(34, 34, 34)">Copy RGB</button>
+              </small>
+            </li>
             <li class="color-sample bg-grey2">&nbsp;</li>
-            <li class="color-description"><small><a class="btn secondary small" href="#">Copy HEX</a><a class="btn secondary small" href="#">Copy RGB</a></small></li>
+            <li class="color-description">
+              <small>
+                <button class="btn secondary small clipboard" data-clipboard-target="#333333">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-target="rgb(51, 51, 51)">Copy RGB</button>
+              </small>
+            </li>
             <li class="color-sample bg-grey3">&nbsp;</li>
-            <li class="color-description"><small><a class="btn secondary small" href="#">Copy HEX</a><a class="btn secondary small" href="#">Copy RGB</a></small></li>
+            <li class="color-description">
+              <small>
+                <button class="btn secondary small clipboard" data-clipboard-target="#555555">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-target="rgb(85, 85, 85)">Copy RGB</button>
+              </small>
+            </li>
             <li class="color-sample bg-grey4">&nbsp;</li>
-            <li class="color-description"><small><a class="btn secondary small" href="#">Copy HEX</a><a class="btn secondary small" href="#">Copy RGB</a></small></li>
+            <li class="color-description">
+              <small>
+                <button class="btn secondary small clipboard" data-clipboard-target="#dddddd">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-target="rgb(221, 221, 221)">Copy RGB</button>
+              </small>
+            </li>
           </ul>
 
         </section>
@@ -123,7 +153,7 @@
           <h3 id="font-sizes" class="font-sizes link">Font Sizes</h3>
           <p>Our typography is set using the Perfect 4th musical intervals as the baseline for our type sizes.</p>
 
-          <table>
+          <table class="font-sizes-table">
             <thead>
               <tr>
                 <td><strong>Absolute Size (px)</strong></td>
@@ -166,6 +196,20 @@
               </tr>
             </tbody>
           </table>
+
+          <h3 id="font-weights" class="font-weights link">Font Weights</h3>
+          <p>Applying various font weights helps to create a separation between content and establish a hierarchy on the page. We use <strong>Proxima Nova</strong> in three weights: bold, semi-bold and regular. Generally, headers should be set in either the bold or semi-bold weight depending on the size and body copy should be set using the regular weight. When in doubt, start heavier and drop down as your font size decreases.</p>
+          <p><strong>Engineer</strong> is only available in a regular font weight.</p>
+
+          <h3 id="text-width" class="text-width link">Text Width</h3>
+          <p>Text width is an important aspect of legibility. The width of all text regions should be restricted based on the context and font size in question. Text should be no wider than roughly 60 characters for text blocks set using a 16px font size with the exception of longform documents (e.g. a cease and desist letter) may be set with standard 1" margins.</p>
+
+          <h3 id="text-color" class="text-color link">Text Color</h3>
+          <p>All text, with the exception of secondary headers (purple) and interactable elements (blue), should be set using an off-black. Our text color is:</p>
+          <ul class="text-color-list">
+            <li>HEX: #222222</li>
+            <li>RGB: rgb(35, 35, 35)</li>
+          </ul>
         </section>
 
         <footer class="footer">
@@ -174,7 +218,11 @@
       </main>
     </div>
 
-    <script src="public/js/script.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="./vendor/assets/components/pattern-library/assets/neue.js" type="text/javascript"></script>
+    <script src="./vendor/assets/components/pattern-library/assets/app.js" type="text/javascript"></script>
+    <script src="./vendor/assets/components/zeroclipboard/ZeroClipboard.js" type="text/javascript"></script>
+    <script src="./public/javascripts/script.js" type="text/javascript"></script>
   </body>
 </html>
 
