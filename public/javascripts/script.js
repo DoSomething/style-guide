@@ -4,7 +4,9 @@ $(function() {
   NEUE.pinToTop();
   
   // Call ZeroClipboard for Flash-based copying to the user's clipboard
-  var clipboard = new ZeroClipboard( $('.clipboard') );
+  var clipboard = new ZeroClipboard( $(".clipboard"), {
+    moviePath: "./vendor/assets/components/zeroclipboard/ZeroClipboard.swf"
+  });
 
   clipboard.on("load", function(client) {
     client.on( "complete", function(client, args) {
