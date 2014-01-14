@@ -8,41 +8,43 @@
 
     <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico" />
     <link href="./vendor/assets/components/pattern-library/assets/neue.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="./vendor/assets/components/pattern-library/assets/neue.js"></script>
+    <script src="./vendor/assets/components/pattern-library/assets/app.js"></script>
+
     <link href="./public/css/style-guide.css" rel="stylesheet">
   </head>
 
   <body>
-
-    <div class="full-width bg-grey1">
-      <div class="wrapper">
-        <header class="header column span_12">
-          <div class="row">
-            <img class="column span_3" src="http://www.dosomething.org/sites/all/themes/doit/images/ds-logo.png" alt="DoSomething.org">
-            <h1 class="column span_9">Style Guide</h1>
-          </div>
-        </header>
-      </div>
-    </div>
-
     <div class="wrapper">
-      <aside class="sidebar column span_3 bg-grey2">
-        <div id="topics" class="topics">
-          <h2 id="current-topic" class="current">Current Topic</h2>
-          <ul>
-            <li>topic 1</li>
-            <li>topic 2</li>
-            <li>topic 3</li>
-            <li>topic 4</li>
-          </ul>
-        </div>
-      </aside>
-      
-      <main class="main column span_6" role="main">
-        <section class="row section">
 
-          <h2>
-            <a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>
-            <a name="introduction" href="#introduction" rel="noreferrer"></a>Introduction</h2>
+      <header class="header row section">
+        <div class="column span_3">
+          <img class="logo" src="http://www.dosomething.org/sites/all/themes/doit/images/ds-logo.png" alt="DoSomething.org">
+        </div>
+
+        <div class="column span_6">
+          <h1 class="title">Style Guide</h1>
+        </div>
+      </header>
+      
+      <main class="main row section" role="main">
+        <aside class="sidebar column span_3">
+          <div id="js-pin-to-top-anchor">&nbsp;</div>
+          <nav id="nav" class="nav js-pin-to-top" role="nav">
+            <ul>
+              <li>topic 1</li>
+              <li>topic 2</li>
+              <li>topic 3</li>
+              <li>topic 4</li>
+            </ul>
+          </nav>
+        </aside>
+
+        <div class="column span_6">
+        <section class="row section">
+          <h2 id="introduction" class="introduction link">Introduction</h2>
 
           <p>This style guide is our visual identity. Within it you'll find an outline of how DoSomething.org communicates our brand visually. Our style guide is a living, breathing document that will evolve over time and change as we change.</p>
 
@@ -52,88 +54,116 @@
 
           <p>View this style guide and its included guidelines as a set of tools. If you find yourself being called upon to do any design work please consult this style guide before starting. It will guide you through the design process. Feedback on design work should be justified and passed with reference to the relevant section of the style guide. If you have any suggestions or find it to be at all incomplete please add an issue to our Trello board.</p>
 
-          <h2>
-          <a name="design-tenents" class="anchor" href="#design-tenents"><span class="octicon octicon-link"></span></a>
-          <a name="design-tenents" href="#design-tenents" rel="noreferrer"></a>Design Tenents</h2>
+        </section>
+        <section class="row section">
+
+          <h2 id="tenents" class="tenents link">Design Tenents</h2>
 
           <p>These tenents are the foundation of design at DoSomething.org. They serve both as a framework for creation and critique.</p>
 
-          <h3>
-          <a name="clean" class="anchor" href="#clean"><span class="octicon octicon-link"></span></a>
-          <a name="clean" href="#clean" rel="noreferrer"></a>Clean</h3>
+          <h3 id="clean" class="clean link">Clean</h3>
 
           <p>First and foremost, Do Something’s visual identity is clean. This is not a license to be boring.* Simple, uncluttered design provides a strong foundation from which we can build at scale.</p>
 
-          <h3>
-          <a name="purposeful" class="anchor" href="#purposeful"><span class="octicon octicon-link"></span></a>
-          <a name="purposeful" href="#purposeful" rel="noreferrer"></a>Purposeful</h3>
+          <h3 id="purposeful" class="purposeful link">Purposeful</h3>
 
           <p>All decisions made should be justifiable. Do Something’s visual brand is clean and consistent. We do not clutter and we do not decorate without reason.</p>
 
-          <h3>
-          <a name="youthful" class="anchor" href="#youthful"><span class="octicon octicon-link"></span></a>
-          <a name="youthful" href="#youthful" rel="noreferrer"></a>Youthful</h3>
+          <h3 id="youthful" class="youthful link">Youthful</h3>
 
           <p>This is who we are. More importantly, that is who our users are. Our visual identity should reflect this.</p>
 
-          <h2>
-          <a name="color" class="anchor" href="#color"><span class="octicon octicon-link"></span></a>
-          <a name="color" href="#color" rel="noreferrer"></a>Color</h2>
-
-          <p>Color is to be used consistently and purposefully. We have a four-tone greyscale complimented by a call to action color and two accent colors. For medium-specific usage please consult:</p>
-
-          <ul>
-          <li>…</li>
-          <li>…</li>
-          <li>…</li>
-          </ul><p>Blue: #23b7fb
-          Purple: #4e2b63
-          Yellow: #fed100</p>
-
-          <h2>
-          <a name="typography" class="anchor" href="#typography"><span class="octicon octicon-link"></span></a>
-          <a name="typography" href="#typography" rel="noreferrer"></a>Typography</h2>
-
-          <p>Our typography is set using a modular scale based on a prearranged set of harmonous proportions. We use the Perfect 4th musical intervals as the baseline for our type sizes.</p>
-
-          <h3>
-          <a name="font-sizes-and-weights" class="anchor" href="#font-sizes-and-weights"><span class="octicon octicon-link"></span></a>
-          <a name="font-sizes-and-weights" href="#font-sizes-and-weights" rel="noreferrer"></a>Font Sizes and Weights</h3>
-
-          <p>These are the pixel values used for our font sizes on all web-based media grouped by weight.</p>
-
-          <ul>
-          <li><strong>Bold</strong></li>
-          <li>50.512</li>
-          <li>37.904</li>
-          <li>28.432</li>
-          <li><strong>Semi-Bold</strong></li>
-          <li>21.328</li>
-          <li>16</li>
-          <li><strong>Regular</strong></li>
-          <li>12</li>
-          <li>9.008</li>
-          <li>6.752</li>
-          </ul><p>3.157
-          2.369
-          1.777</p>
-
-          <p>1.333
-          1</p>
-
-          <p>0.75
-          0.563
-          0.422</p>
         </section>
-      </main>
-    </div>
+        <section class="row section">
 
-    <div class="full-width bg-grey3">
-      <div class="wrapper">
-        <footer class="footer column span_12">
+          <h2 id="color" class="color link">Color</h2>
+
+          <p>Color is to be used consistently and purposefully. We have a four-tone greyscale complimented by a call to action color and two accent colors.</p>
+
+          <ul>
+            <li><strong>Colors</strong></li>
+            <li class="color-sample bg-blue">&nbsp;</li>
+            <li class="color-description">Blue: #23b7fb</li>
+            <li class="color-sample bg-purple">&nbsp;</li>
+            <li class="color-description">Purple: #4e2b63</li>
+            <li class="color-sample bg-yellow">&nbsp;</li>
+            <li class="color-description">Yellow: #fed100</li>
+
+            <li><strong>Greyscale</strong></li>
+            <li class="color-sample bg-grey1">&nbsp;</li>
+            <li class="color-description">Dark Grey: #222222</li>
+            <li class="color-sample bg-grey2">&nbsp;</li>
+            <li class="color-description">Med Grey: #333333</li>
+            <li class="color-sample bg-grey3">&nbsp;</li>
+            <li class="color-description">Light Grey: #666666</li>
+            <li class="color-sample bg-grey4">&nbsp;</li>
+            <li class="color-description">Off-White: #dddddd</li>
+          </ul>
+
+        </section>
+        <section class="row section">
+
+          <h2 id="typography" class="typography link">Typography</h2>
+          <p>Content on the web is consumed primarily in written form. For this reason it's incredibly important that our typography be clear and consistent across all public-facing communication channels.</p>
+          
+          <h3 id="font-families" class="font-families link">Font Families</h3>
+          <p><a href="http://www.marksimonson.com/fonts/view/proxima-nova">Proxima Nova</a> is our base typeface. It is a clean, modern sans serif typeface designed by Mark Simonson. In addition, a cursive font named <a href="http://www.behance.net/gallery/LEngineer-Font/9274907">L'Engineer</a> is available for use.</p>
+
+          <p><strong>Proxima Nova</strong> is the only typeface other than Engineer that is approved for use. No other font is permitted for use on any public-facing asset, slide deck, web site, banner advertisement, etc.</p>
+          <p><strong>Engineer</strong> is to be used sparingly to provide additional information and call attention to important aspects of a content region. On the web site it is to be used exclusively with a yellow highlight mark.</p>
+
+          <h3 id="font-sizes" class="font-sizes link">Font Sizes</h3>
+          <p>Our typography is set using the Perfect 4th musical intervals as the baseline for our type sizes.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <td><strong>Absolute Size (px)</strong></td>
+                <td><strong>Relative Size (em)</strong></td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>50.512</td>
+                <td>3.157</td>
+              </tr>
+              <tr>
+                <td>37.904</td>
+                <td>2.369</td>
+              </tr>
+              <tr>
+                <td>28.432</td>
+                <td>1.777</td>
+              </tr>
+              <tr>
+                <td>21.328</td>
+                <td>1.333</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>0.75</td>
+              </tr>
+              <tr>
+                <td>9.008</td>
+                <td>0.563</td>
+              </tr>
+              <tr>
+                <td>6.752</td>
+                <td>0.422</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <footer class="footer">
           <small class="row hand-written">&copy; 2014</small>
         </footer>
-      </div>
+      </main>
     </div>
 
     <script src="public/js/script.js" type="text/javascript"></script>
