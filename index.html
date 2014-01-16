@@ -13,20 +13,22 @@
 
   <body>
     <div class="wrapper">
-
       <header class="header row section">
         <div class="logo-wrapper column span_3">
           <img class="logo" src="http://www.dosomething.org/sites/all/themes/doit/images/ds-logo.png" alt="DoSomething.org">
-        </div>
+      </div>
+      
+        <button id="toggle" class="toggle">&#9776;</button>
 
         <div class="column span_6">
           <h1 class="title">Style Guide <a class="version" href="https://github.com/mmwtsn/style-guide/tags" target="_new">v0.1.0</a></h1>
         </div>
       </header>
       
-      <main class="main row section" role="main">
+      <div class="page row section">
         <aside class="sidebar column span_3">
           <div id="js-pin-to-top-anchor">&nbsp;</div>
+
           <nav id="nav" class="nav js-pin-to-top" role="nav">
             <ul>
               <li><a class="js-jump-scroll link" href="#introduction">introduction</a></li>
@@ -37,173 +39,171 @@
           </nav>
         </aside>
 
-        <div class="column span_6">
-        <section class="row section">
-          <h2 id="introduction" class="introduction link">1. Introduction</h2>
+        <main class="main column span_6" role="main">
+          <section class="row section">
+            <h2 id="introduction" class="introduction link">1. Introduction</h2>
 
-          <p>This style guide is our visual identity. Within it you'll find an outline of how DoSomething.org communicates our brand visually. Our style guide is a living, breathing document that will evolve over time and change as we change.</p>
+            <p>This style guide is our visual identity. Within it you'll find an outline of how DoSomething.org communicates our brand visually. Our style guide is a living, breathing document that will evolve over time and change as we change.</p>
 
-          <p>This style guide is not our entire brand. Our brand is far more than what we show. For non-visual brand guidelines please see our Communications Guide.</p>
+            <p>This style guide is not our entire brand. Our brand is far more than what we show. For non-visual brand guidelines please see our Communications Guide.</p>
 
-          <p>A few points: our style guide lives in code and is hosted in the cloud. That means that at any time the most up-to-date version of it will always be accessible to you. Perhaps more importantly, that means that the style guide you see here is the actual HTML and CSS that will be used to build our site. Any changes made here will be seen across our entire web platform. A PDF version will also be made accessible in the near future.</p>
+            <p>A few points: our style guide lives in code and is hosted in the cloud. That means that at any time the most up-to-date version of it will always be accessible to you. Perhaps more importantly, that means that the style guide you see here is the actual HTML and CSS that will be used to build our site. Any changes made here will be seen across our entire web platform. A PDF version will also be made accessible in the near future.</p>
 
-          <p>View this style guide and its included guidelines as a set of tools. If you find yourself being called upon to do any design work please consult this style guide before starting. It will guide you through the design process. Feedback on design work should be justified and passed with reference to the relevant section of the style guide. If you have any suggestions or find it to be at all incomplete please add an issue to our Trello board.</p>
+            <p>View this style guide and its included guidelines as a set of tools. If you find yourself being called upon to do any design work please consult this style guide before starting. It will guide you through the design process. Feedback on design work should be justified and passed with reference to the relevant section of the style guide. If you have any suggestions or find it to be at all incomplete please add an issue to our Trello board.</p>
+          </section>
 
-        </section>
-        <section class="row section">
+          <section class="row section">
+            <h2 id="tenents" class="tenents link">2. Design Tenents</h2>
 
-          <h2 id="tenents" class="tenents link">2. Design Tenents</h2>
+            <p>These tenents are the foundation of design at DoSomething.org. They serve both as a framework for creation and critique.</p>
 
-          <p>These tenents are the foundation of design at DoSomething.org. They serve both as a framework for creation and critique.</p>
+            <h3 id="clean" class="clean link">Clean</h3>
 
-          <h3 id="clean" class="clean link">Clean</h3>
+            <p>First and foremost, Do Something’s visual identity is clean. This is not a license to be boring.* Simple, uncluttered design provides a strong foundation from which we can build at scale.</p>
 
-          <p>First and foremost, Do Something’s visual identity is clean. This is not a license to be boring.* Simple, uncluttered design provides a strong foundation from which we can build at scale.</p>
+            <h3 id="purposeful" class="purposeful link">Purposeful</h3>
 
-          <h3 id="purposeful" class="purposeful link">Purposeful</h3>
+            <p>All decisions made should be justifiable. Do Something’s visual brand is clean and consistent. We do not clutter and we do not decorate without reason.</p>
 
-          <p>All decisions made should be justifiable. Do Something’s visual brand is clean and consistent. We do not clutter and we do not decorate without reason.</p>
+            <h3 id="youthful" class="youthful link">Youthful</h3>
 
-          <h3 id="youthful" class="youthful link">Youthful</h3>
+            <p>This is who we are. More importantly, that is who our users are. Our visual identity should reflect this.</p>
+          </section>
 
-          <p>This is who we are. More importantly, that is who our users are. Our visual identity should reflect this.</p>
+          <section class="row section">
+            <h2 id="color" class="color link">3. Color</h2>
 
-        </section>
-        <section class="row section">
+            <p>Color is to be used consistently and purposefully. We have a four-tone greyscale complimented by a call to action color and two accent colors.</p>
 
-          <h2 id="color" class="color link">3. Color</h2>
+            <ul>
+              <li><h3>Blue</h3></li>
+              <li><p>Our blue is a color used primarily for interactable elements on web platforms. It is the default call to action color and should be used for primary links, buttons, navigation items, etc. This blue should <i>not</i> be used as an accent or background color. Headers and other typographic elements should not be set in this blue unless they are linked elements.</p></li>
+              <li class="color-sample bg-blue">&nbsp;</li>
+              <li class="color-description">
+                <button class="btn secondary small clipboard" data-clipboard-text="#23b7fb">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-text="rgb(35, 183, 251)">Copy RGB</button>
+              </li>
 
-          <p>Color is to be used consistently and purposefully. We have a four-tone greyscale complimented by a call to action color and two accent colors.</p>
+              <li><h3>Purple</h3></li>
+              <li><p>Purple is used to call attention to significant points of user interaction (e.g. the "report back" section of the campaign action page) or typographic elements to break up the monotony of long passages of type. Uses: second-level headers, background color of system messages and important content regions <i>containing actionable elements</i>.</p></li>
+              <li class="color-sample bg-purple">&nbsp;</li>
+              <li class="color-description">
+                <button class="btn secondary small clipboard" data-clipboard-text="#4e2b63">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-text="rgb(78, 43, 99)">Copy RGB</button>
+              </li>
 
-          <ul>
-            <li><h3>Blue</h3></li>
-            <li><p>Our blue is a color used primarily for interactable elements on web platforms. It is the default call to action color and should be used for primary links, buttons, navigation items, etc. This blue should <i>not</i> be used as an accent or background color. Headers and other typographic elements should not be set in this blue unless they are linked elements.</p></li>
-            <li class="color-sample bg-blue">&nbsp;</li>
-            <li class="color-description">
-              <button class="btn secondary small clipboard" data-clipboard-text="#23b7fb">Copy HEX</button>
-              <button class="btn secondary small clipboard" data-clipboard-text="rgb(35, 183, 251)">Copy RGB</button>
-            </li>
+              <li><h3>Yellow</h3></li>
+              <li><p>Yellow is used as a skeuomorphic accent to all handwritten elements in our applications. All text set using the Engineer typeface should be accompanied by an organic highlight mark under the text. Yellow should not be used for slides, page elements or call to action elements (e.g. buttons, etc.).</p></li>
+              <li class="color-sample bg-yellow">&nbsp;</li>
+              <li class="color-description">
+                <button class="btn secondary small clipboard" data-clipboard-text="#fed100">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-text="rgb(254, 209, 0)">Copy RGB</button>
+              </li>
 
-            <li><h3>Purple</h3></li>
-            <li><p>Purple is used to call attention to significant points of user interaction (e.g. the "report back" section of the campaign action page) or typographic elements to break up the monotony of long passages of type. Uses: second-level headers, background color of system messages and important content regions <i>containing actionable elements</i>.</p></li>
-            <li class="color-sample bg-purple">&nbsp;</li>
-            <li class="color-description">
-              <button class="btn secondary small clipboard" data-clipboard-text="#4e2b63">Copy HEX</button>
-              <button class="btn secondary small clipboard" data-clipboard-text="rgb(78, 43, 99)">Copy RGB</button>
-            </li>
+              <li><h3>Greyscale</h3></li>
+              <li><p>Our greyscale is used primarily to color block background elements. These page elements are typically header, navigation, aside or footer elements. By setting a darker background on these elements we are able to clearly differentiate these page regions, group relevant content and diminish the visual importance of secondary or tertiary page sections (e.g. a footer). The lightest of greys is useful when an accent or border is needed to break up content set against a white background.</p></li>
+              <li class="color-sample bg-grey1">&nbsp;</li>
+              <li class="color-description">
+                <button class="btn secondary small clipboard" data-clipboard-text="#222222">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-text="rgb(34, 34, 34)">Copy RGB</button>
+              </li>
+              <li class="color-sample bg-grey2">&nbsp;</li>
+              <li class="color-description">
+                <button class="btn secondary small clipboard" data-clipboard-text="#333333">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-text="rgb(51, 51, 51)">Copy RGB</button>
+              </li>
+              <li class="color-sample bg-grey3">&nbsp;</li>
+              <li class="color-description">
+                <button class="btn secondary small clipboard" data-clipboard-text="#555555">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-text="rgb(85, 85, 85)">Copy RGB</button>
+              </li>
+              <li class="color-sample bg-grey4">&nbsp;</li>
+              <li class="color-description">
+                <button class="btn secondary small clipboard" data-clipboard-text="#dddddd">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-text="rgb(221, 221, 221)">Copy RGB</button>
+              </li>
+            </ul>
+          </section>
 
-            <li><h3>Yellow</h3></li>
-            <li><p>Yellow is used as a skeuomorphic accent to all handwritten elements in our applications. All text set using the Engineer typeface should be accompanied by an organic highlight mark under the text. Yellow should not be used for slides, page elements or call to action elements (e.g. buttons, etc.).</p></li>
-            <li class="color-sample bg-yellow">&nbsp;</li>
-            <li class="color-description">
-              <button class="btn secondary small clipboard" data-clipboard-text="#fed100">Copy HEX</button>
-              <button class="btn secondary small clipboard" data-clipboard-text="rgb(254, 209, 0)">Copy RGB</button>
-            </li>
+          <section class="row section">
+            <h2 id="typography" class="typography link">4. Typography</h2>
+            <p>Content on the web is consumed primarily in written form. For this reason it's incredibly important that our typography be clear and consistent across all public-facing communication channels.</p>
+            
+            <h3 id="font-families" class="font-families link">Font Families</h3>
+            <p><a href="http://www.marksimonson.com/fonts/view/proxima-nova">Proxima Nova</a> is our base typeface. It is a clean, modern sans serif typeface designed by Mark Simonson. In addition, a cursive font named <a href="http://www.behance.net/gallery/LEngineer-Font/9274907">L'Engineer</a> is available for use.</p>
 
-            <li><h3>Greyscale</h3></li>
-            <li><p>Our greyscale is used primarily to color block background elements. These page elements are typically header, navigation, aside or footer elements. By setting a darker background on these elements we are able to clearly differentiate these page regions, group relevant content and diminish the visual importance of secondary or tertiary page sections (e.g. a footer). The lightest of greys is useful when an accent or border is needed to break up content set against a white background.</p></li>
-            <li class="color-sample bg-grey1">&nbsp;</li>
-            <li class="color-description">
-              <button class="btn secondary small clipboard" data-clipboard-text="#222222">Copy HEX</button>
-              <button class="btn secondary small clipboard" data-clipboard-text="rgb(34, 34, 34)">Copy RGB</button>
-            </li>
-            <li class="color-sample bg-grey2">&nbsp;</li>
-            <li class="color-description">
-              <button class="btn secondary small clipboard" data-clipboard-text="#333333">Copy HEX</button>
-              <button class="btn secondary small clipboard" data-clipboard-text="rgb(51, 51, 51)">Copy RGB</button>
-            </li>
-            <li class="color-sample bg-grey3">&nbsp;</li>
-            <li class="color-description">
-              <button class="btn secondary small clipboard" data-clipboard-text="#555555">Copy HEX</button>
-              <button class="btn secondary small clipboard" data-clipboard-text="rgb(85, 85, 85)">Copy RGB</button>
-            </li>
-            <li class="color-sample bg-grey4">&nbsp;</li>
-            <li class="color-description">
-              <button class="btn secondary small clipboard" data-clipboard-text="#dddddd">Copy HEX</button>
-              <button class="btn secondary small clipboard" data-clipboard-text="rgb(221, 221, 221)">Copy RGB</button>
-            </li>
-          </ul>
+            <p><strong>Proxima Nova</strong> is the only typeface other than Engineer that is approved for use. No other font is permitted for use on any public-facing asset, slide deck, web site, banner advertisement, etc.</p>
+            <p><strong>Engineer</strong> is to be used sparingly to provide additional information and call attention to important aspects of a content region. On the web site it is to be used exclusively with a yellow highlight mark.</p>
 
-        </section>
-        <section class="row section">
+            <h3 id="font-sizes" class="font-sizes link">Font Sizes</h3>
+            <p>Our typography is set using the Perfect 4th musical intervals as the baseline for our type sizes.</p>
 
-          <h2 id="typography" class="typography link">4. Typography</h2>
-          <p>Content on the web is consumed primarily in written form. For this reason it's incredibly important that our typography be clear and consistent across all public-facing communication channels.</p>
-          
-          <h3 id="font-families" class="font-families link">Font Families</h3>
-          <p><a href="http://www.marksimonson.com/fonts/view/proxima-nova">Proxima Nova</a> is our base typeface. It is a clean, modern sans serif typeface designed by Mark Simonson. In addition, a cursive font named <a href="http://www.behance.net/gallery/LEngineer-Font/9274907">L'Engineer</a> is available for use.</p>
+            <table class="font-sizes-table">
+              <thead>
+                <tr>
+                  <td><strong>Absolute Size (px)</strong></td>
+                  <td><strong>Relative Size (em)</strong></td>
+                </tr>
+              </thead>
 
-          <p><strong>Proxima Nova</strong> is the only typeface other than Engineer that is approved for use. No other font is permitted for use on any public-facing asset, slide deck, web site, banner advertisement, etc.</p>
-          <p><strong>Engineer</strong> is to be used sparingly to provide additional information and call attention to important aspects of a content region. On the web site it is to be used exclusively with a yellow highlight mark.</p>
+              <tbody>
+                <tr>
+                  <td>50.512</td>
+                  <td>3.157</td>
+                </tr>
+                <tr>
+                  <td>37.904</td>
+                  <td>2.369</td>
+                </tr>
+                <tr>
+                  <td>28.432</td>
+                  <td>1.777</td>
+                </tr>
+                <tr>
+                  <td>21.328</td>
+                  <td>1.333</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>0.75</td>
+                </tr>
+                <tr>
+                  <td>9.008</td>
+                  <td>0.563</td>
+                </tr>
+                <tr>
+                  <td>6.752</td>
+                  <td>0.422</td>
+                </tr>
+              </tbody>
+            </table>
 
-          <h3 id="font-sizes" class="font-sizes link">Font Sizes</h3>
-          <p>Our typography is set using the Perfect 4th musical intervals as the baseline for our type sizes.</p>
+            <h3 id="font-weights" class="font-weights link">Font Weights</h3>
+            <p>Applying various font weights helps to create a separation between content and establish a hierarchy on the page. We use <strong>Proxima Nova</strong> in three weights: bold, semi-bold and regular. Generally, headers should be set in either the bold or semi-bold weight depending on the size and body copy should be set using the regular weight. When in doubt, start heavier and drop down as your font size decreases.</p>
+            <p><strong>Engineer</strong> is only available in a regular font weight.</p>
 
-          <table class="font-sizes-table">
-            <thead>
-              <tr>
-                <td><strong>Absolute Size (px)</strong></td>
-                <td><strong>Relative Size (em)</strong></td>
-              </tr>
-            </thead>
+            <h3 id="text-width" class="text-width link">Text Width</h3>
+            <p>Text width is an important aspect of legibility. The width of all text regions should be restricted based on the context and font size in question. Text should be no wider than roughly 60 characters for text blocks set using a 16px font size with the exception of longform documents (e.g. a cease and desist letter) may be set with standard 1" margins.</p>
 
-            <tbody>
-              <tr>
-                <td>50.512</td>
-                <td>3.157</td>
-              </tr>
-              <tr>
-                <td>37.904</td>
-                <td>2.369</td>
-              </tr>
-              <tr>
-                <td>28.432</td>
-                <td>1.777</td>
-              </tr>
-              <tr>
-                <td>21.328</td>
-                <td>1.333</td>
-              </tr>
-              <tr>
-                <td>16</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>0.75</td>
-              </tr>
-              <tr>
-                <td>9.008</td>
-                <td>0.563</td>
-              </tr>
-              <tr>
-                <td>6.752</td>
-                <td>0.422</td>
-              </tr>
-            </tbody>
-          </table>
+            <h3 id="text-color" class="text-color link">Text Color</h3>
+            <p>All text, with the exception of secondary headers (purple) and interactable elements (blue), should be set using an off-black. Our text color is:</p>
+            <ul>
+              <li>
+                <button class="btn secondary small clipboard" data-clipboard-text="#222222">Copy HEX</button>
+                <button class="btn secondary small clipboard" data-clipboard-text="rgb(35, 35, 35)">Copy RGB</button>
+              </li>
+            </ul>
+          </section>
 
-          <h3 id="font-weights" class="font-weights link">Font Weights</h3>
-          <p>Applying various font weights helps to create a separation between content and establish a hierarchy on the page. We use <strong>Proxima Nova</strong> in three weights: bold, semi-bold and regular. Generally, headers should be set in either the bold or semi-bold weight depending on the size and body copy should be set using the regular weight. When in doubt, start heavier and drop down as your font size decreases.</p>
-          <p><strong>Engineer</strong> is only available in a regular font weight.</p>
-
-          <h3 id="text-width" class="text-width link">Text Width</h3>
-          <p>Text width is an important aspect of legibility. The width of all text regions should be restricted based on the context and font size in question. Text should be no wider than roughly 60 characters for text blocks set using a 16px font size with the exception of longform documents (e.g. a cease and desist letter) may be set with standard 1" margins.</p>
-
-          <h3 id="text-color" class="text-color link">Text Color</h3>
-          <p>All text, with the exception of secondary headers (purple) and interactable elements (blue), should be set using an off-black. Our text color is:</p>
-          <ul>
-            <li>
-              <button class="btn secondary small clipboard" data-clipboard-text="#222222">Copy HEX</button>
-              <button class="btn secondary small clipboard" data-clipboard-text="rgb(35, 35, 35)">Copy RGB</button>
-            </li>
-          </ul>
-        </section>
-
-        <footer class="footer">
-          <small class="row hand-written">Built by <a href="https://github.com/DoSomething">DoSomething.org</a> &copy; 2014</small>
-        </footer>
-      </main>
+          <footer class="footer">
+            <small class="row hand-written">Built by <a href="https://github.com/DoSomething">DoSomething.org</a> &copy; 2014</small>
+          </footer>
+        </main>
+      </div>
     </div>
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
