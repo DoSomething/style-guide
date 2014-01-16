@@ -59,11 +59,11 @@ $smallest-font: 0.422rem;
 }
  
 .title {
-  margin: 3rem 0 1rem !important;
+  margin: 2rem 0 1rem !important;
   text-transform: uppercase;
 
   @media all and (max-width: 750px) {
-    margin: 2rem 0 1rem !important;
+    margin: 1.5rem 0 1rem !important;
     font-size: $regular-font;
     color: $grey3;
   }
@@ -96,10 +96,10 @@ button.toggle {
     display: block;
     height: auto;
     position: absolute;
-    top: 1rem;
-    right: 0.5rem;
+    top: 0.8rem;
+    right: 0.8rem;
     z-index: 3;
-    font-size: $large-font;
+    font-size: 1.5rem;
   }
 }
 
