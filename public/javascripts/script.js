@@ -1,6 +1,6 @@
 // Base JavaScript file
 $(function() {
-  // Drop down nav
+  // Toggle navigation visibility on ☰ click
   $('#toggle').on('click', function() {
     $('.nav').slideToggle();
   });
