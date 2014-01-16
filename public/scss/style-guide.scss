@@ -1,3 +1,7 @@
+// -----------------
+//  Color Variables
+// -----------------
+
 // Colors
 $blue: #23b7fb;
 $purple: #4e2b63;
@@ -9,52 +13,14 @@ $grey2: #333;
 $grey3: #555;
 $grey4: #ddd;
 
-.bg-grey1 {
-  background: $grey1;
-}
+// -----------------------
+//  Style Guide Overrides
+// -----------------------
 
-.bg-grey2 {
-  background: $grey2;
-}
-
-.bg-grey3 {
-  background: $grey3;
-}
-
-.bg-grey4 {
-  background: $grey4;
-}
-
-.bg-blue {
-  background: $blue;
-}
-
-.bg-purple {
-  background: $purple;
-}
-
-.bg-yellow {
-  background: $yellow;
-}
-
-// -------------
-//  Style Guide
-// -------------
-
-a {
-  color: $blue;
-
-  &:hover {
-    color: lighten($blue, 10%);
-  }
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
+// <header>
+.header {
+  margin: 0 0 2rem 0 !important;
+  overflow: hidden;
 }
 
 .logo-wrapper {
@@ -68,48 +34,15 @@ a {
   width: 100px;
 }
  
-.title {
-  text-transform: uppercase;
-}
-
 .version {
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
 }
 
-.header {
-  margin: 0 0 2rem 0 !important;
-  overflow: hidden;
-}
-
-.color-sample {
-  width: 100%;
-  height: 1.5rem;
-}
-
-.color-description {
-  width: 100%;
-  height: 2rem;
-  margin: 0 0 3rem 0;
-
-  .btn {
-    margin: 1rem 1.5rem 1.5rem 0;
-  }
-}
-
+// <aside>
 #js-pin-to-top-anchor {
   height: 26px;
-}
-
-.is-stuck {
-  top: 26px;
-}
-
-.text-color-list li {
-  list-style-type: disc;
-  padding: 0 0 0 0.5rem;
-  margin: 0 0 0 1rem;
 }
 
 .nav .link {
@@ -119,19 +52,18 @@ a {
   font-weight: 600;
 }
 
-.font-sizes-table {
-  td, th {
-    padding: 0.3rem 0.5rem;
-    border: 1px solid $grey4;
-  }
+.is-stuck {
+  top: 26px;
 }
 
+// Generic styles
 .main {
 
   .row.section:first-child {
     margin-top: -3rem;
   }
 
+  // TODO - Make available to all brand.ds properties
   .section {
     border-bottom: 1px solid $grey4;
     position: relative;
@@ -155,6 +87,41 @@ a {
   }
 }
 
+// Color section
+.color-sample {
+  width: 100%;
+  height: 1.5rem;
+}
+
+.color-description {
+  width: 100%;
+  height: 2rem;
+  margin: 0 0 3rem 0;
+
+  .btn {
+    margin: 1rem 1.5rem 1.5rem 0;
+  }
+}
+
+.text-color-list li {
+  list-style-type: disc;
+  padding: 0 0 0 0.5rem;
+  margin: 0 0 0 1rem;
+}
+
+// Typography section
+.font-sizes-table {
+  td, th {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid $grey4;
+  }
+}
+
+// --------------------------------
+//  TODO - Port to Pattern Library
+// --------------------------------
+
+// Typography
 h1 {
   font-size: 3.157rem;
   font-weight: 700;
@@ -191,4 +158,53 @@ small {
 
 h1, h2, h3, h4, h5 {
   margin: 2rem 0 1rem 0 !important;
+}
+
+a {
+  color: $blue;
+
+  &:hover {
+    color: lighten($blue, 10%);
+  }
+}
+
+// Modifier classes
+.bg-grey1 {
+  background: $grey1;
+}
+
+.bg-grey2 {
+  background: $grey2;
+}
+
+.bg-grey3 {
+  background: $grey3;
+}
+
+.bg-grey4 {
+  background: $grey4;
+}
+
+.bg-blue {
+  background: $blue;
+}
+
+.bg-purple {
+  background: $purple;
+}
+
+.bg-yellow {
+  background: $yellow;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.title {
+  text-transform: uppercase;
 }
