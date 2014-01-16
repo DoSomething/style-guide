@@ -1,6 +1,6 @@
 # DoSomething.org's Style Guide
 ### v0.1.0
-This is an initial pass at the 2014 Style Guide. It is hosted on GitHub pages.
+This is an initial pass at the 2014 Style Guide. It is hosted on GitHub Pages.
 
 A fully featured version is in the works that will live at **brand.dosomething.org** and include:
 - Communications Guide
