@@ -41,7 +41,7 @@ $smallest-font: 0.422rem;
   height: 8.7rem;
 
   @media all and (max-width: 750px) {
-    height: auto;
+    display: none;
   }
 }
 
@@ -63,8 +63,9 @@ $smallest-font: 0.422rem;
   text-transform: uppercase;
 
   @media all and (max-width: 750px) {
-    margin: 0.5rem 0px !important;
-    font-size: $large-font;
+    margin: 2rem 0 1rem !important;
+    font-size: $regular-font;
+    color: $grey3;
   }
 }
 
@@ -72,10 +73,6 @@ $smallest-font: 0.422rem;
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
-
-  @media all and (max-width: 750px) {
-    display: none;
-  }
 }
 
 // <aside>
@@ -90,7 +87,8 @@ $smallest-font: 0.422rem;
   }
 }
 
-.toggle {   display: none;
+button.toggle {
+  display: none;
   background: none;
   border: none;
 
@@ -100,6 +98,7 @@ $smallest-font: 0.422rem;
     position: absolute;
     top: 1rem;
     right: 0.5rem;
+    z-index: 3;
     font-size: $large-font;
   }
 }
@@ -111,21 +110,17 @@ $smallest-font: 0.422rem;
   @media all and (max-width: 750px) {
     display: none;
 
+    ul {
+      padding: 0.5rem 0 0.5rem 0;
+      background: #eee;
+    }
+
     li {
       text-align: center;
       width: 100%;
-      background: #eee;
 
-      &:first-child {
-        padding: 0.5rem 0 0 0;
-      }
-
-      &:last-child {
-        padding: 0 0 0.5rem 0;
-
-        a {
-          border-bottom: none;
-        }
+      &:last-child a {
+        border-bottom: none;
       }
 
       a {
@@ -133,6 +128,7 @@ $smallest-font: 0.422rem;
         width: 80%;
         display: block;
         margin: 0 auto;
+        padding: 0.25rem 0;
       }
     }
   }
