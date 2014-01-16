@@ -1,5 +1,10 @@
 // Base JavaScript file
 $(function() {
+  // Drop down nav
+  $('#toggle').on('click', function() {
+    $('.nav').slideToggle();
+  });
+
   // Call function to pin sticky nav
   NEUE.pinToTop();
   
