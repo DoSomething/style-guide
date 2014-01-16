@@ -1,6 +1,6 @@
-// -----------------
-//  Color Variables
-// -----------------
+// -----------
+//  Variables
+// -----------
 
 // Colors
 $blue: #23b7fb;
@@ -13,6 +13,16 @@ $grey2: #333;
 $grey3: #555;
 $grey4: #ddd;
 
+// Font Sizes
+$largest-font: 3.157rem;
+$larger-font: 2.369rem;
+$large-font: 1.777rem;
+$medium-font: 1.333rem;
+$regular-font: 1rem;
+$small-font: 0.75rem;
+$smaller-font: 0.563rem;
+$smallest-font: 0.422rem;
+
 // -----------------------
 //  Style Guide Overrides
 // -----------------------
@@ -21,10 +31,18 @@ $grey4: #ddd;
 .header {
   margin: 0 0 2rem 0 !important;
   overflow: hidden;
+
+  @media all and (max-width: 750px) {
+    margin: 0 !important;
+  }
 }
 
 .logo-wrapper {
   height: 8.7rem;
+
+  @media all and (max-width: 750px) {
+    height: auto;
+  }
 }
 
 .logo {
@@ -32,35 +50,118 @@ $grey4: #ddd;
   bottom: 0;
   margin: 0 0 1.5rem 0;
   width: 100px;
+
+  @media all and (max-width: 750px) {
+    position: static;
+    margin: 1.3rem 0 0 0;
+    width: 60px;
+  }
 }
  
+.title {
+  margin: 3rem 0 1rem !important;
+  text-transform: uppercase;
+
+  @media all and (max-width: 750px) {
+    margin: 0.5rem 0px !important;
+    font-size: $large-font;
+  }
+}
+
 .version {
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
+
+  @media all and (max-width: 750px) {
+    display: none;
+  }
 }
 
 // <aside>
-#js-pin-to-top-anchor {
-  height: 26px;
+.sidebar {
+  position: static;
 }
 
-.nav .link {
-  text-transform: capitalize;
-  text-decoration: none;
-  font-size: 1.333rem;
-  font-weight: 600;
+#js-pin-to-top-anchor {
+  
+  @media all and (max-width: 750px) {
+    height: 0;
+  }
+}
+
+.toggle {   display: none;
+  background: none;
+  border: none;
+
+  @media all and (max-width: 750px) {
+    display: block;
+    height: auto;
+    position: absolute;
+    top: 1rem;
+    right: 0.5rem;
+    font-size: $large-font;
+  }
+}
+
+// <nav>
+.nav {
+  border-radius: 3px;
+
+  @media all and (max-width: 750px) {
+    display: none;
+
+    li {
+      text-align: center;
+      width: 100%;
+      background: #eee;
+
+      &:first-child {
+        padding: 0.5rem 0 0 0;
+      }
+
+      &:last-child {
+        padding: 0 0 0.5rem 0;
+
+        a {
+          border-bottom: none;
+        }
+      }
+
+      a {
+        border-bottom: 1px solid #dcdcdc;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .link {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.333rem;
+    font-weight: 600;
+  }
 }
 
 .is-stuck {
   top: 26px;
 }
 
+.toggle:hover + .nav {
+
+  @media all and (max-width: 750px) {
+    display: block;
+  }
+}
+
+
 // Generic styles
 .main {
 
   .row.section:first-child {
-    margin-top: -3rem;
+    margin-top: -1rem;
   }
 
   // TODO - Make available to all brand.ds properties
@@ -121,35 +222,63 @@ $grey4: #ddd;
 //  TODO - Port to Pattern Library
 // --------------------------------
 
+// Modifications
+.wrapper {
+
+  // Force container gutter on mobile
+  @media all and (max-width: 750px) {
+    max-width: 90%;  }
+}
+
 // Typography
 h1 {
-  font-size: 3.157rem;
+  font-size: $largest-font;
   font-weight: 700;
+
+  @media all and (max-width: 750px) {
+    font-size: $larger-font;
+  }
 }
 
 h2 {
-  font-size: 2.369rem;
+  font-size: $larger-font;
   font-weight: 700;
+
+  @media all and (max-width: 750px) {
+    font-size: $large-font;
+  }
 }
 
 h3 {
-  font-size: 1.777rem;
+  font-size: $large-font;
   font-weight: 600;
+
+  @media all and (max-width: 750px) {
+    font-size: $medium-font;
+  }
 }
 
 h4 {
-  font-size: 1.333rem;
+  font-size: $medium-font;
   font-weight: 600;
+
+  @media all and (max-width: 750px) {
+    font-size: $regular-font;
+  }
 }
 
 p {
-  font-size: 1rem;
+  font-size: $regular-font;
   font-weight: 400;
 }
 
 small {
-  font-size: 0.75rem;
+  font-size: $small-font;
   font-weight: 400;
+
+  @media all and (max-width: 750px) {
+    font-size: $smaller-font;
+  }
 }
 
 * {
@@ -203,8 +332,4 @@ a {
 
 .right {
   float: right;
-}
-
-.title {
-  text-transform: uppercase;
 }
