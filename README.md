@@ -12,7 +12,7 @@ A fully featured version is in the works that will live at **brand.dosomething.o
 ```
 The MIT License (MIT)
 
-Copyright (c) [2014] [DoSomething.org]
+Copyright (c) 2014 DoSomething.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
