@@ -1,6 +1,6 @@
 # DoSomething.org's Style Guide
 ### v0.1.0
-This is an initial pass at the 2014 Style Guide. It is hosted on GitHub Pages.
+This the first version of the 2014 Style Guide. It is hosted on GitHub Pages.
 
 A fully featured version is in the works that will live at **brand.dosomething.org** and include:
 - Communications Guide
@@ -8,14 +8,11 @@ A fully featured version is in the works that will live at **brand.dosomething.o
 - Asset Library
 - Pattern Library
 
-## Author
-[M. Maxwell Watson](http://mmwtsn.com/)
-
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) [2014] [M. Maxwell Watson]
+Copyright (c) [2014] [DoSomething.org]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
